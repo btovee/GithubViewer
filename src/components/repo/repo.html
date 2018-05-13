@@ -1,3 +1,55 @@
-<p>
-    {{ repoInfo }}
-</p>
+
+<div class="container">
+    <div class="row">
+        <h1>{{ repoInfo.name }} ({{ repoInfo.full_name }})</h1>
+        <img ng-src="{{ repoInfo.avatar_url }}" title="{{ repoInfo.full_name }}" />
+    </div>
+    <div class="row">
+        <table class="table table-hover">
+            <thead>
+                    <tr>
+                            <th>#</th>
+                            <th>Info</th>
+                          </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                            <td>private</td>
+                            <td>{{repoInfo.private}}</td>
+                    </tr>
+                    <tr>
+                            <td>html url</td>
+                            <td>{{repoInfo.html_url}}</td>
+                    </tr>
+                    <tr>
+                            <td>description</td>
+                            <td>{{repoInfo.description}}</td>
+                    </tr>
+                    <tr>
+                            <td>created at</td>
+                            <td>{{repoInfo.created_at}}</td>
+                    </tr>
+                    <tr>
+                            <td>updated at</td>
+                            <td>{{repoInfo.updated_at}}</td>
+                    </tr>
+                    <tr>
+                            <td>clone url</td>
+                            <td>{{repoInfo.clone_url}}</td>
+                    </tr>
+                    <tr>
+                            <td>stars</td>
+                            <td>{{repoInfo.stargazers_count}}</td>
+                    </tr>
+                    <tr>
+                            <td>watchers</td>
+                            <td>{{repoInfo.watchers_count}}</td>
+                    </tr>
+<tr>
+                            <td>language</td>
+                            <td>{{repoInfo.language}}</td>
+                    </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
