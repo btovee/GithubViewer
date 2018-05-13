@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row">
+      <div ng-show="error">
+          <p style="color: firebrick; font-weight: bold;"> {{ error }} </p>
+        </div>
+        <div ng-show="countdown">
+          <h3> You have {{ countdown }} seconds before an Automatic search will run.</h3>
+        </div>
+        <form name="searchUser" ng-submit="findUser()">
+          <input type="search" placeholder=" Username to find" ng-model="searchTerm" required="" />
+          <input type="submit" value="Search" />
+        </form>
+  </div>
+</div>
+
+
